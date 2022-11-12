@@ -12,10 +12,10 @@ routes.post('/question',new QuestionController().create)
 routes.get('/question',new QuestionController().getAll)
 routes.get('/question/:id',new QuestionController().getOne)
 
-routes.use(authMiddleware)
-//profile
-routes.post('/profile', new ProfileController().create)
-routes.get('/profile', new ProfileController().getProfile)
-routes.put('/profile', new ProfileController().profileUpdate)
+// routes.use(authMiddleware)
+// //profile
+// routes.post('/profile', new ProfileController().create)
+// routes.get('/profile', new ProfileController().getProfile)
+// routes.put('/profile', new ProfileController().profileUpdate)
 
 export default routes

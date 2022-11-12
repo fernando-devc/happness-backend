@@ -12,7 +12,9 @@ const routes_1 = __importDefault(require("./routes"));
 data_source_1.AppDataSource.initialize().then(() => {
     const app = (0, express_1.default)();
     app.use(express_1.default.json());
-    app.use((0, cors_1.default)());
+    app.use((0, cors_1.default)({
+        origin: '*'
+    }));
     app.use(routes_1.default);
     app.use(error_1.errorMiddleware);
     return app.listen(process.env.PORT);
