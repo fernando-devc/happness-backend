@@ -1,0 +1,15 @@
+# fly.toml file generated for happness on 2022-11-12T11:59:46-04:00
+
+app = "happness"
+
+[[services]]
+  internal_port = 8000
+  protocol = "tcp"
+
+[env]
+DB_HOST = "happness-db.internal"
+DB_PORT = "5432"
+DB_USER = "postgres"
+DB_PASS = "4hnhDKAvPeZKlaS"
+DB_NAME = "happness"
+PORT = "8000"
